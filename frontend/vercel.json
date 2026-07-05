@@ -1,0 +1,10 @@
+{
+  "name": "cybehrm",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
+}

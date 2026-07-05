@@ -9754,7 +9754,7 @@ export default function App() {
                       <div style={{ color: "var(--text-muted)", fontSize: "13px", marginTop: "4px" }}>Generated {latest.generated_at || latest.created_at || "—"}</div>
                     </div>
                     <button className="btn btn-primary" style={{ padding: "8px 20px" }}
-                      onClick={() => window.open(latest.pdf_url || `http://localhost:8000/payroll/payslips/${latest.id}/download`, "_blank")}
+                      onClick={() => window.open(latest.pdf_url || `${API_BASE_URL}/payroll/payslips/${latest.id}/download`, "_blank")}
                     >📥 Download PDF</button>
                   </div>
                   <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: "16px", marginBottom: "24px" }}>
@@ -9826,7 +9826,7 @@ export default function App() {
                         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                           <span style={{ fontWeight: 700, fontSize: "15px" }}>{ps.pay_period || ps.month || `Period #${i + 1}`}</span>
                           <button className="btn btn-secondary" style={{ padding: "4px 10px", fontSize: "11px" }}
-                            onClick={() => window.open(ps.pdf_url || `http://localhost:8000/payroll/payslips/${ps.id}/download`, "_blank")}
+                            onClick={() => window.open(ps.pdf_url || `${API_BASE_URL}/payroll/payslips/${ps.id}/download`, "_blank")}
                           >📥 PDF</button>
                         </div>
                         <div style={{ display: "flex", justifyContent: "space-between", fontSize: "13px" }}>
