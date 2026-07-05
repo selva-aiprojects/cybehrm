@@ -1,0 +1,64 @@
+# ─── Python ───────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.so
+.env
+.venv
+venv/
+env/
+
+# ─── Pytest / Testing ─────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ─── Frontend / Node ──────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.local
+
+# ─── Flutter / Dart ───────────────────────────────────────
+mobile/.dart_tool/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/build/
+mobile/.packages
+*.g.dart
+
+# ─── IDEs & Editors ───────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ─── Logs ─────────────────────────────────────────────────
+*.log
+*.log.*
+
+# ─── Secrets (never commit) ───────────────────────────────
+.env
+.env.*
+!.env.example
+secrets.json
+
+# ─── Diagnostic and Test Helper Scripts ──────────────────
+backend/check_*.py
+backend/clean_*.py
+backend/cleanup.py
+backend/rename_*.py
+backend/seed_*.py
+backend/test_*.py
+
+# Stray export files
+*.html
