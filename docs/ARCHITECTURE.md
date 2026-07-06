@@ -1,10 +1,10 @@
-# CogniHRM — System Architecture & Design
+# CybeHRM — System Architecture & Design
 
 ---
 
 ## 1. PRODUCT OVERVIEW
 
-**CogniHRM** is a multi-tenant SaaS HRMS platform purpose-built for Indian SMEs. It covers the full employee lifecycle — from requisition to exit — as a single connected system of record.
+**CybeHRM** is a multi-tenant SaaS HRMS platform purpose-built for Indian SMEs. It covers the full employee lifecycle — from requisition to exit — as a single connected system of record.
 
 ### Four Workspaces
 

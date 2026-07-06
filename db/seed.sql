@@ -1,4 +1,4 @@
--- CogniHR Database Seed Script
+-- CybeHRM Database Seed Script
 -- Generates default organization, core departments, default designations,
 -- sample users (super admin, HR manager, employees), initial leave balances,
 -- and salary structures for testing multi-tenancy and modules.
@@ -13,7 +13,7 @@
 
 INSERT INTO organizations (id, name, subdomain, domain, subscription_plan, subscription_status, feature_talent_mgmt, feature_hr_team, feature_resource_mgmt)
 VALUES 
-('a8385002-390c-45a8-8e6d-2c8b7468112c', 'Acme Corporation', 'acme', 'acme.cognihr.com', 'growth', 'active', true, true, true),
+('a8385002-390c-45a8-8e6d-2c8b7468112c', 'Acme Corporation', 'acme', 'acme.cybehrm.com', 'growth', 'active', true, true, true),
 ('b5278c6a-49bd-4cc7-bc6d-eb1a3c77d54b', 'Nexus Health', 'nexus', 'nexushealth.com', 'starter', 'active', true, true, true);
 
 
@@ -197,7 +197,7 @@ VALUES
 -- Seed John Doe Old Regime Tax Declaration for verification
 INSERT INTO tax_declarations (id, organization_id, employee_id, financial_year, regime, section_80c, section_80d, hra_rent_paid, landlord_pan, landlord_name, evidence_url, status, created_at, updated_at)
 VALUES
-('51111111-1111-1111-1111-111111111111', 'a8385002-390c-45a8-8e6d-2c8b7468112c', 'e3333333-3333-3333-3333-333333333333', '2025-2026', 'old', 120000.00, 25000.00, 180000.00, 'ABCDE1234F', 'Mr. Rent Lord', 'https://evidence.cognihr.com/rent_receipts_john.pdf', 'approved', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+('51111111-1111-1111-1111-111111111111', 'a8385002-390c-45a8-8e6d-2c8b7468112c', 'e3333333-3333-3333-3333-333333333333', '2025-2026', 'old', 120000.00, 25000.00, 180000.00, 'ABCDE1234F', 'Mr. Rent Lord', 'https://evidence.cybehrm.com/rent_receipts_john.pdf', 'approved', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
 
 -- =========================================================================
 -- 14. SEED SALARY BANDS (ERP MASTER)

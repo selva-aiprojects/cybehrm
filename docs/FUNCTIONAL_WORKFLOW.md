@@ -1,6 +1,6 @@
-# CogniHR — Functional Workflow Document
+# CybeHRM — Functional Workflow Document
 
-> **Application:** CogniHR Multi-Tenant HRMS  
+> **Application:** CybeHRM Multi-Tenant HRMS  
 > **Frontend:** React SPA (`App.tsx`, 13k+ lines)  
 > **Backend:** FastAPI Python  
 > **Last Updated:** June 2026
@@ -31,7 +31,7 @@ When the user first loads the app, they see an **unauthenticated state** with a 
 
 | Panel | Content |
 |---|---|
-| **Left (Brand Side)** | "CogniHR" branding, AI-powered taglines, glass badges (AI-Powered NLP Matching, Enterprise Multi-Tenant, Statutory Compliance) |
+| **Left (Brand Side)** | "CybeHRM" branding, AI-powered taglines, glass badges (AI-Powered NLP Matching, Enterprise Multi-Tenant, Statutory Compliance) |
 | **Right (Form Side)** | Login form (default) or Registration form (toggle) |
 
 **Login Fields:**

@@ -2,7 +2,7 @@ import urllib.request
 import time
 import concurrent.futures
 
-url = "https://cognihr-backend.onrender.com/"
+url = "https://cybehrm-backend.onrender.com/"
 
 def make_req(i):
     try:

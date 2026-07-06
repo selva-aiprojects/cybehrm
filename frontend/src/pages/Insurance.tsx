@@ -111,7 +111,7 @@ export function InsurancePage(props: {
 
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", zIndex: 2 }}>
                     <div>
-                      <h4 style={{ fontFamily: "var(--font-heading)", fontSize: "18px", letterSpacing: "1px", fontWeight: 7 }}>COGNIPROTECT</h4>
+                      <h4 style={{ fontFamily: "var(--font-heading)", fontSize: "18px", letterSpacing: "1px", fontWeight: 7 }}>CYBEPROTECT</h4>
                       <span style={{ fontSize: "9px", letterSpacing: "0.5px", opacity: 0.7, textTransform: "uppercase" }}>Corporate Health Shield</span>
                     </div>
                     <div style={{ background: "rgba(255, 255, 255, 0.15)", backdropFilter: "blur(5px)", padding: "4px 10px", borderRadius: "8px", fontSize: "10px", fontWeight: 6, textTransform: "uppercase", letterSpacing: "0.5px", border: "1px solid rgba(255, 255, 255, 0.1)" }}>

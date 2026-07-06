@@ -3,11 +3,11 @@ import 'package:google_fonts/google_fonts.dart';
 
 class CogniTheme {
   // ─── Brand Palette ──────────────────────────────────────────────────────────
-  static const Color brand900   = Color(0xFF0E243D); // CogniHR navy
+  static const Color brand900   = Color(0xFF0E243D); // CybeHRM navy
   static const Color brand800   = Color(0xFF17334F); // Deep navy tint
   static const Color brand700   = Color(0xFF0E243D); // Primary brand
   static const Color brand600   = Color(0xFF123150); // Primary hover
-  static const Color brand400   = Color(0xFF2A9D8F); // CogniHR teal
+  static const Color brand400   = Color(0xFF2A9D8F); // CybeHRM teal
   static const Color brand100   = Color(0xFFE8F3F1); // Teal tint
   static const Color brand50    = Color(0xFFF4F6F8); // Brand off-white
 

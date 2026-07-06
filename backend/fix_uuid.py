@@ -6,8 +6,8 @@ def fix():
 
     # 1. Fix Booleans
     text = text.replace(
-        "('a8385002-390c-45a8-8e6d-2c8b7468112c', 'Acme Corporation', 'acme', 'acme.cognihr.com', 'growth', 'active', 1, 1, 1)",
-        "('a8385002-390c-45a8-8e6d-2c8b7468112c', 'Acme Corporation', 'acme', 'acme.cognihr.com', 'growth', 'active', true, true, true)"
+        "('a8385002-390c-45a8-8e6d-2c8b7468112c', 'Acme Corporation', 'acme', 'acme.cybehrm.com', 'growth', 'active', 1, 1, 1)",
+        "('a8385002-390c-45a8-8e6d-2c8b7468112c', 'Acme Corporation', 'acme', 'acme.cybehrm.com', 'growth', 'active', true, true, true)"
     )
     text = text.replace(
         "('b5278c6a-49bd-4cc7-bc6d-eb1a3c77d54b', 'Nexus Health', 'nexus', 'nexushealth.com', 'starter', 'active', 1, 1, 1)",

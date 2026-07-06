@@ -1,4 +1,4 @@
-// App.tsx - Premium Multi-Tenant HRMS Interface (CogniHR)
+// App.tsx - Premium Multi-Tenant HRMS Interface (CybeHRM)
 import React, { useState, useEffect, useRef } from "react";
 import { jsPDF } from "jspdf";
 import { Toaster } from "react-hot-toast";
@@ -932,7 +932,7 @@ export default function App() {
   // Groq AI Chat States
   const [aiQuery, setAiQuery] = useState<string>("");
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([
-    { sender: "assistant", text: "Hello! I am CogniHR, your AI Assistant powered by Groq LPUs. Ask me about company policy, vacation balance, or salary calculations." }
+    { sender: "assistant", text: "Hello! I am CybeHRM, your AI Assistant powered by Groq LPUs. Ask me about company policy, vacation balance, or salary calculations." }
   ]);
   const [isAiLoading, setIsAiLoading] = useState<boolean>(false);
   const chatBottomRef = useRef<HTMLDivElement>(null);
@@ -2637,7 +2637,7 @@ export default function App() {
   useEffect(() => {
     if (currentUser && organizations.length > 0) {
       if (currentUser.role === "super_admin") {
-        setOrgName("CogniHR Core Control");
+        setOrgName("CybeHRM Core Control");
       } else {
         const org = organizations.find((o: Organization) => o.id === currentUser.organization_id);
         if (org) {
@@ -2732,11 +2732,11 @@ export default function App() {
 
       // Extract organization context e.g. capitalize
       if (userData.role === "super_admin") {
-        setOrgName("CogniHR Core Control");
+        setOrgName("CybeHRM Core Control");
         setActiveView("nexus-mgmt");
       } else {
         const org = organizations.find(o => o.id === selectedOrgId);
-        setOrgName(org ? org.name : "CogniHR Tenant");
+        setOrgName(org ? org.name : "CybeHRM Tenant");
       }
 
       // 2. Fetch Employee matching profile
@@ -3928,7 +3928,7 @@ export default function App() {
         throw new Error(data.detail || "Authentication Failed");
       }
       setToken(data.access_token);
-      setAuthSuccess("Authentication successful! Welcome to CogniHR.");
+      setAuthSuccess("Authentication successful! Welcome to CybeHRM.");
     } catch (err: any) {
       setAuthError(err.message);
     } finally {
@@ -4275,7 +4275,7 @@ export default function App() {
               The Intelligence Engine<br/>for Modern HR.
             </h1>
             <p style={{ fontSize: "18px", color: "rgba(255,255,255,0.8)", maxWidth: "480px", lineHeight: 1.6 }}>
-              CogniHR empowers enterprises to autonomously manage recruitment, payroll, and compliance through advanced NLP and predictive models.
+              CybeHRM empowers enterprises to autonomously manage recruitment, payroll, and compliance through advanced NLP and predictive models.
             </p>
             
             <div className="auth-floating-badges" style={{ display: "flex", flexWrap: "wrap", gap: "12px", marginTop: "48px" }}>
@@ -4307,7 +4307,7 @@ export default function App() {
                 Welcome back
               </h2>
               <p style={{ color: "var(--text-secondary)", fontSize: "16px" }}>
-                {isRegisterMode ? "Bootstrap your Multi-Tenant SaaS HRMS Workspace" : "Enter your tenant credentials to access CogniHR"}
+                {isRegisterMode ? "Bootstrap your Multi-Tenant SaaS HRMS Workspace" : "Enter your tenant credentials to access CybeHRM"}
               </p>
             </div>
 
@@ -4572,7 +4572,7 @@ export default function App() {
             <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
               <span style={{ fontSize: "28px" }}>🌐</span>
               <div>
-                <h2 style={{ margin: 0 }}>Central SaaS CogniHR Control Plane</h2>
+                <h2 style={{ margin: 0 }}>Central SaaS CybeHRM Control Plane</h2>
                 <p style={{ color: "var(--text-muted)", fontSize: "13px", margin: 0 }}>Provision Logical Tenant Shards, Manage Global Support Tickets, and Track Infra Resources Telemetry</p>
               </div>
             </div>
@@ -4923,7 +4923,7 @@ export default function App() {
             <span style={{ fontSize: "32px" }}>🎫</span>
             <div>
               <h2 style={{ margin: 0 }}>Customer Support Desk &amp; Issue Tracker</h2>
-              <p style={{ color: "var(--text-muted)", fontSize: "13px", margin: "4px 0 0" }}>Raise and track support tickets directly with the CogniHR central SaaS administration team. Report technical bugs, billing queries, infrastructure incidents, or request a subscription plan upgrade — with full priority classification and resolution audit trail.</p>
+              <p style={{ color: "var(--text-muted)", fontSize: "13px", margin: "4px 0 0" }}>Raise and track support tickets directly with the CybeHRM central SaaS administration team. Report technical bugs, billing queries, infrastructure incidents, or request a subscription plan upgrade — with full priority classification and resolution audit trail.</p>
             </div>
           </div>
         </div>
@@ -4935,7 +4935,7 @@ export default function App() {
               <span style={{ fontSize: "24px" }}>🛠️</span>
               <h3 style={{ margin: 0 }}>Raise a New Support Ticket</h3>
             </div>
-            <p style={{ color: "var(--text-muted)", fontSize: "12.5px", marginBottom: "20px" }}>Submit a detailed support request to the CogniHR SaaS Administration team. Include replication steps, screenshots, or your subscription upgrade requirements.</p>
+            <p style={{ color: "var(--text-muted)", fontSize: "12.5px", marginBottom: "20px" }}>Submit a detailed support request to the CybeHRM SaaS Administration team. Include replication steps, screenshots, or your subscription upgrade requirements.</p>
             
             <form onSubmit={handleCreateTicket}>
               <div className="form-group">
@@ -6296,7 +6296,7 @@ export default function App() {
     doc.setFontSize(10);
     doc.setTextColor(51, 65, 85);
     doc.text(`Date: ${new Date(offer.created_at).toLocaleDateString()}`, 20, 40);
-    doc.text(`Ref: COGNIHR/OFFER/${offer.id.substring(0, 8).toUpperCase()}`, 20, 45);
+    doc.text(`Ref: CYBEHRM/OFFER/${offer.id.substring(0, 8).toUpperCase()}`, 20, 45);
     
     // Recipient details
     doc.setFont("Helvetica", "bold");
@@ -6318,7 +6318,7 @@ export default function App() {
     doc.setFontSize(10);
     doc.text(`Dear ${candidate.first_name},`, 20, 95);
     
-    const bodyText = `We are pleased to offer you employment with CogniHR Solutions in the role of ${offer.grade} level placement. We were highly impressed with your credentials and background during the interview process, and we believe you will be a valuable addition to our organization.`;
+    const bodyText = `We are pleased to offer you employment with CybeHRM Solutions in the role of ${offer.grade} level placement. We were highly impressed with your credentials and background during the interview process, and we believe you will be a valuable addition to our organization.`;
     
     const splitBody = doc.splitTextToSize(bodyText, 170);
     doc.text(splitBody, 20, 102);
@@ -6357,13 +6357,13 @@ export default function App() {
     doc.setFont("Helvetica", "bold");
     doc.text("Human Resources Department", 20, 225);
     doc.setFont("Helvetica", "normal");
-    doc.text("CogniHR Solutions", 20, 230);
+    doc.text("CybeHRM Solutions", 20, 230);
     
     // Footer
     doc.line(20, 270, 190, 270);
     doc.setFontSize(8);
     doc.setTextColor(148, 163, 184);
-    doc.text("Confidential Offer Document - CogniHR Solutions", 20, 275);
+    doc.text("Confidential Offer Document - CybeHRM Solutions", 20, 275);
     
     doc.save(`Offer_Letter_${candidate.first_name}_${candidate.last_name}.pdf`);
   };
@@ -7953,14 +7953,14 @@ export default function App() {
       <div className="wp-admin-bar">
         <div className="wp-admin-bar-left">
           {/* Complete Logo */}
-          <div style={{ display: "flex", alignItems: "center", cursor: "pointer", marginRight: "12px" }} onClick={() => { setActiveView("dashboard"); }} title="CogniHR Dashboard">
+          <div style={{ display: "flex", alignItems: "center", cursor: "pointer", marginRight: "12px" }} onClick={() => { setActiveView("dashboard"); }} title="CybeHRM Dashboard">
             <img 
               src="/logo.png" 
-              alt="CogniHR" 
+              alt="CybeHRM" 
               style={{ height: "30px", width: "auto", objectFit: "contain" }} 
               onError={(e) => { 
                 e.currentTarget.style.display = 'none'; 
-                e.currentTarget.parentElement!.innerHTML = '<span style="color:#fff;font-weight:bold;font-size:18px;letter-spacing:-0.5px;">CogniHR</span>'; 
+                e.currentTarget.parentElement!.innerHTML = '<span style="color:#fff;font-weight:bold;font-size:18px;letter-spacing:-0.5px;">CybeHRM</span>'; 
               }} 
             />
           </div>
@@ -8522,7 +8522,7 @@ export default function App() {
                 "appraisals": "Appraisals",
                 "ai-promotions": "AI Promotions",
                 "exit-center": "Exit Center",
-                "nexus-mgmt": "CogniHR Control Plane",
+                "nexus-mgmt": "CybeHRM Control Plane",
                 "onboarding-checklist": "Onboarding Induction Checklist",
                 "rmg-checklist": "Checklist",
                 "asset-registry": "Asset Registry"
@@ -8559,7 +8559,7 @@ export default function App() {
                 "appraisals": "Appraisals",
                 "ai-promotions": "AI Promotions",
                 "exit-center": "Exit Center",
-                "nexus-mgmt": "CogniHR Control Plane",
+                "nexus-mgmt": "CybeHRM Control Plane",
                 "onboarding-checklist": "Onboarding Checklist",
                 "rmg-checklist": "Checklist",
                 "asset-registry": "Asset Registry"
@@ -10368,7 +10368,7 @@ export default function App() {
                   
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", zIndex: 2 }}>
                     <div>
-                      <h4 style={{ fontFamily: "var(--font-heading)", fontSize: "18px", letterSpacing: "1px", fontWeight: 7 }}>COGNIPROTECT</h4>
+                      <h4 style={{ fontFamily: "var(--font-heading)", fontSize: "18px", letterSpacing: "1px", fontWeight: 7 }}>CYBEPROTECT</h4>
                       <span style={{ fontSize: "9px", letterSpacing: "0.5px", opacity: 0.7, textTransform: "uppercase" }}>Corporate Health Shield</span>
                     </div>
                     <div style={{ background: "rgba(255, 255, 255, 0.15)", backdropFilter: "blur(5px)", padding: "4px 10px", borderRadius: "8px", fontSize: "10px", fontWeight: 6, textTransform: "uppercase", letterSpacing: "0.5px", border: "1px solid rgba(255, 255, 255, 0.1)" }}>
@@ -11022,7 +11022,7 @@ export default function App() {
                       <span>🚀</span> 1. HR Operations: Initiate 6-Month KRA Cycle
                     </h3>
                     <p style={{ fontSize: "13px", color: "var(--text-muted)", marginBottom: "16px" }}>
-                      Sends an official organization-wide email broadcast from CogniHRMS to all employees instructing them to define and submit their 6-month Goal/KRA objectives.
+                      Sends an official organization-wide email broadcast from CybeHRM to all employees instructing them to define and submit their 6-month Goal/KRA objectives.
                     </p>
                     <form onSubmit={handleInitiateCycle} style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
                       <div className="form-group">
@@ -11050,7 +11050,7 @@ export default function App() {
                     <span>📋</span> 2. Manager: Team KRA Setting Alignment
                   </h3>
                   <p style={{ fontSize: "13px", color: "var(--text-muted)", marginBottom: "16px" }}>
-                    Sends a formal email communication from CogniHRMS to your direct reportees reminding them to finalize and share their Goal &amp; KRA settings for review.
+                    Sends a formal email communication from CybeHRM to your direct reportees reminding them to finalize and share their Goal &amp; KRA settings for review.
                   </p>
                   <form onSubmit={handleInitiateTeamReminders} style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
                     <div className="form-group">
@@ -11586,7 +11586,7 @@ export default function App() {
           <div className="glass-card chat-container animated">
             <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid var(--border-color)", paddingBottom: "16px", marginBottom: "16px" }}>
               <div>
-                <h3>CogniHR AI policy Companion</h3>
+                <h3>CybeHRM AI policy Companion</h3>
                 <p style={{ color: "var(--text-muted)", fontSize: "12px", marginTop: "2px" }}>Powered by Groq Sub-Second Inference LPUs</p>
               </div>
               <button className="btn btn-secondary" style={{ padding: "8px 16px", fontSize: "12px" }} onClick={handleOcrMockUpload}>
@@ -11604,7 +11604,7 @@ export default function App() {
               ))}
               {isAiLoading && (
                 <div className="chat-bubble assistant" style={{ fontStyle: "italic", color: "var(--text-muted)" }}>
-                  💬 CogniHR AI is thinking in sub-seconds...
+                  💬 CybeHRM AI is thinking in sub-seconds...
                 </div>
               )}
               <div ref={chatBottomRef} />

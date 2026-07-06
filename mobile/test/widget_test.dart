@@ -14,7 +14,7 @@ void main() {
       ),
     );
 
-    // Verify that the login screen is loaded (CogniHR title should be there)
-    expect(find.textContaining('CogniHR'), findsWidgets);
+    // Verify that the login screen is loaded (CybeHRM title should be there)
+    expect(find.textContaining('CybeHRM'), findsWidgets);
   });
 }

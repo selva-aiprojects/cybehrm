@@ -138,7 +138,7 @@ class _MyInsuranceScreenState extends State<MyInsuranceScreen> {
                 children: [
                   Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                     Text('Group Health Policy', style: GoogleFonts.inter(color: Colors.white70, fontSize: 12, fontWeight: FontWeight.w600)),
-                    Text('COGNISURE GHI', style: GoogleFonts.inter(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w900)),
+                    Text('CYBESURE GHI', style: GoogleFonts.inter(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w900)),
                   ]),
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),

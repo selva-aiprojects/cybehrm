@@ -1,8 +1,8 @@
 import urllib.request
 import json
 
-login_url = "https://cognihr-backend.onrender.com/auth/login"
-emp_url = "https://cognihr-backend.onrender.com/employees"
+login_url = "https://cybehrm-backend.onrender.com/auth/login"
+emp_url = "https://cybehrm-backend.onrender.com/employees"
 
 payload = {
     "email": "admin@orient-ts.com",

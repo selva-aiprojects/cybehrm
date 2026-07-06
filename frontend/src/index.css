@@ -1,5 +1,5 @@
 /* index.css — HRMS-Engine 2.0 Premium Design System */
-/* CogniHR Intelligence Theme */
+/* CybeHRM Intelligence Theme */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 /* =====================================================================
@@ -7,10 +7,10 @@
    ===================================================================== */
 :root {
   /* Brand Colors */
-  --primary: #0E243D; /* CogniHR Navy */
+  --primary: #0E243D; /* CybeHRM Navy */
   --primary-deep: #07182C;
   --primary-rgb: 14, 36, 61;
-  --accent: #2A9D8F; /* CogniHR Teal */
+  --accent: #2A9D8F; /* CybeHRM Teal */
   --accent-rgb: 42, 157, 143;
   --accent-hover: #23877B;
   --wp-menu-bg: linear-gradient(135deg, #ffffff 0%, #F4F6F8 100%);

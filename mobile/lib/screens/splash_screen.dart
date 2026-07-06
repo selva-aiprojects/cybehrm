@@ -208,7 +208,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                     child: Column(
                       children: [
                         Text(
-                          'CogniHRMS',
+                          'CybeHRM',
                           style: GoogleFonts.plusJakartaSans(
                             fontSize: 32,
                             fontWeight: FontWeight.w800,

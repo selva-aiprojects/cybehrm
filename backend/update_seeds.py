@@ -9,7 +9,7 @@ print("Generated fresh hash:", fresh_hash)
 print("Verifying fresh hash:", bcrypt.checkpw(raw_password, fresh_hash.encode('utf-8')))
 
 # 1. Update SQLite Database
-db_path = "cognihr.db"
+db_path = "cybehrm.db"
 print(f"Updating {db_path} users with fresh password hash...")
 conn = sqlite3.connect(db_path)
 cursor = conn.cursor()

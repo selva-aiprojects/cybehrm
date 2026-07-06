@@ -1,11 +1,11 @@
 import urllib.request
 
-url = "https://cognihr-backend.onrender.com/employees"
+url = "https://cybehrm-backend.onrender.com/employees"
 req = urllib.request.Request(
     url,
     method='OPTIONS',
     headers={
-        'Origin': 'https://cognihr.onrender.com',
+        'Origin': 'https://cybehrm.onrender.com',
         'Access-Control-Request-Method': 'GET',
         'Access-Control-Request-Headers': 'authorization',
         'User-Agent': 'Mozilla/5.0'

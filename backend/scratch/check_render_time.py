@@ -4,7 +4,7 @@ import jwt
 import time
 from datetime import datetime
 
-login_url = "https://cognihr-backend.onrender.com/auth/login"
+login_url = "https://cybehrm-backend.onrender.com/auth/login"
 payload = {
     "email": "admin@orient-ts.com",
     "password": "Password123",
@@ -36,7 +36,7 @@ try:
     print(f"Diff (exp - now): {exp - now_ts} seconds")
     
     # 3. Call auth/me
-    me_url = "https://cognihr-backend.onrender.com/auth/me"
+    me_url = "https://cybehrm-backend.onrender.com/auth/me"
     req_me = urllib.request.Request(
         me_url,
         headers={'Authorization': f'Bearer {token}', 'User-Agent': 'Mozilla/5.0'}
