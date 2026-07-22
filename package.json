@@ -2,6 +2,6 @@
   "name": "cybehrm-monorepo",
   "version": "1.0.0",
   "scripts": {
-    "build": "npm --prefix frontend install && npm run build --prefix frontend"
+    "build": "npm --prefix frontend install && npm run build --prefix frontend && cp -r frontend/dist dist"
   }
 }
