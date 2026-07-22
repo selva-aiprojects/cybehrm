@@ -111,7 +111,7 @@ export default function LandingPage({ onLoginClick }: LandingPageProps) {
       <section className="hero">
         <div className="hero-grid">
           <div>
-            <div className="eyebrow">A Whitekraaft.com Product · Built for Indian SMEs</div>
+            <div className="eyebrow">A Cybelinx Product · Built for Indian SMEs</div>
             <h1 className="display">Run HR like one connected <span className="grad">system of record.</span></h1>
             <p className="lead">CybeHRM runs attendance, payroll, statutory tax, benefits, hiring, and exits in a single platform — so nothing gets approved twice and nothing slips through unrecorded.</p>
             <div className="hero-ctas">
@@ -339,7 +339,7 @@ export default function LandingPage({ onLoginClick }: LandingPageProps) {
         </div>
         <div className="fmeta" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <span>© 2026 CYBEHRM · MULTI-TENANT HRMS · SUPABASE · RENDER</span>
-          <span style={{ paddingLeft: '16px', borderLeft: '1px solid var(--border-color)', color: 'var(--primary)' }}>A Whitekraaft.com Product</span>
+          <span style={{ paddingLeft: '16px', borderLeft: '1px solid var(--border-color)', color: 'var(--primary)' }}>A Cybelinx Product</span>
         </div>
       </footer>
     </div>

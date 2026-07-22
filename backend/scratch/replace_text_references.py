@@ -1,12 +1,12 @@
 import os
 
 replacements = {
-    "whitekraaft.com": "orient-ts.com",
-    "whitekraaft": "orient-ts",
-    "Whitekraaft Solutions": "Orient Technology Solutions",
-    "Whitekraaft Inc": "Orient Technology Solutions Inc",
-    "Whitekraaft": "Orient",
-    "WHITEKRAAFT": "ORIENT"
+    "cybelinx.com": "orient-ts.com",
+    "cybelinx": "orient-ts",
+    "Cybelinx Solutions": "Orient Technology Solutions",
+    "Cybelinx Inc": "Orient Technology Solutions Inc",
+    "Cybelinx": "Orient",
+    "CYBELINX": "ORIENT"
 }
 
 files_to_update = [
@@ -26,10 +26,10 @@ files_to_update = [
     "scratch/test_prod_employees.py",
     "scratch/test_leave_request.py",
     "scratch/test_dashboard_metrics.py",
-    "scratch/force_clear_whitekraaft.py",
+    "scratch/force_clear_cybelinx.py",
     "scratch/fix_admin_employee.py",
-    "scratch/check_whitekraaft_schema.py",
-    "scratch/check_whitekraaft.py",
+    "scratch/check_cybelinx_schema.py",
+    "scratch/check_cybelinx.py",
     "scratch/check_rmg_data.py",
     "scratch/check_render_time.py",
     "scratch/check_counts.py",

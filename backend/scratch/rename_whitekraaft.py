@@ -14,11 +14,11 @@ async def main():
     async with engine.begin() as conn:
         try:
             # 1. Rename schema
-            res = await conn.execute(text("SELECT schema_name FROM information_schema.schemata WHERE schema_name = 'whitekraaft'"))
+            res = await conn.execute(text("SELECT schema_name FROM information_schema.schemata WHERE schema_name = 'cybelinx'"))
             if res.scalar():
-                print("Renaming schema whitekraaft to orient-ts...")
+                print("Renaming schema cybelinx to orient-ts...")
                 await conn.execute(text('DROP SCHEMA IF EXISTS "orient-ts" CASCADE'))
-                await conn.execute(text('ALTER SCHEMA "whitekraaft" RENAME TO "orient-ts"'))
+                await conn.execute(text('ALTER SCHEMA "cybelinx" RENAME TO "orient-ts"'))
             else:
                 await conn.execute(text('CREATE SCHEMA IF NOT EXISTS "orient-ts"'))
 
@@ -27,15 +27,15 @@ async def main():
             await conn.execute(text("""
                 UPDATE organizations 
                 SET name = 'Orient Technology Solutions', subdomain = 'orient-ts' 
-                WHERE subdomain = 'whitekraaft' OR name = 'Whitekraaft Solutions'
+                WHERE subdomain = 'cybelinx' OR name = 'Cybelinx Solutions'
             """))
 
             # 3. Update users
             print("Updating users...")
             await conn.execute(text("""
                 UPDATE users 
-                SET email = replace(email, '@whitekraaft.com', '@orient-ts.com')
-                WHERE email LIKE '%@whitekraaft.com'
+                SET email = replace(email, '@cybelinx.com', '@orient-ts.com')
+                WHERE email LIKE '%@cybelinx.com'
             """))
 
             print("Database updates completed successfully!")
