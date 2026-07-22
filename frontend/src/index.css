@@ -2079,5 +2079,91 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* =====================================================================
+   MOBILE RESPONSIVENESS FOR TOPNAV (WP STYLE)
+   ===================================================================== */
+@media (max-width: 768px) {
+  .wp-admin-bar {
+    height: auto;
+    flex-direction: column;
+    padding: 10px 12px;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .wp-admin-bar-left, .wp-admin-bar-right {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .wp-admin-workspace-switcher {
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+  .wp-admin-workspace-switcher::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Make Teal Bar a Bottom Navigation on Mobile */
+  .wp-teal-menu-bar {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 64px;
+    padding: 0 4px;
+    border-bottom: none;
+    border-top: 1px solid var(--border-color);
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.05);
+  }
+  .wp-menu-item {
+    min-width: 65px;
+    padding: 4px 6px;
+  }
+  .wp-menu-label {
+    font-size: 10px;
+    white-space: normal;
+    text-align: center;
+  }
+  .wp-menu-icon {
+    font-size: 20px;
+  }
+  
+  .wp-content-panel-horizontal {
+    padding: 16px 12px;
+    padding-bottom: 90px; /* Space for bottom nav */
+  }
+  
+  .wp-sliding-panel {
+    top: 0;
+    padding: 16px;
+  }
+  
+  .wp-content-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wp-header-search-bar {
+    width: 100%;
+  }
+  .wp-search-input {
+    width: 100%;
+  }
+  .wp-search-input:focus {
+    width: 100%;
+  }
+  
+  /* Stats grid columns adjustment */
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
