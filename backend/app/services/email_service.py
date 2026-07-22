@@ -10,7 +10,7 @@ def send_offer_email(candidate_email: str, candidate_name: str, job_title: str, 
         logger.warning("RESEND_API_KEY is not configured. Email not sent.")
         return False
     
-    subject = f"Official Employment Offer Letter - {job_title} - CybeHRM"
+    subject = f"Official Employment Offer Letter - {job_title} - SynthalystHRM"
     
     # Render a premium, styled email template
     html_content = f"""
@@ -104,7 +104,7 @@ def send_offer_email(candidate_email: str, candidate_name: str, job_title: str, 
     <body>
         <div class="container">
             <div class="header">
-                <h1>CybeHRM Solutions</h1>
+                <h1>SynthalystHRM Solutions</h1>
                 <p>Official Offer of Employment</p>
             </div>
             <div class="content">
@@ -135,12 +135,12 @@ def send_offer_email(candidate_email: str, candidate_name: str, job_title: str, 
                 
                 <div class="signature">
                     <strong>Human Resources Division</strong><br>
-                    CybeHRM Solutions<br>
+                    SynthalystHRM Solutions<br>
                     <span style="font-size: 12px; color: #94a3b8;">Email: onboarding@cognivectra.com</span>
                 </div>
             </div>
             <div class="footer">
-                This is a confidential employment offer document generated via CybeHRM Solutions portal. The information contained in this communication is confidential and privileged.
+                This is a confidential employment offer document generated via SynthalystHRM Solutions portal. The information contained in this communication is confidential and privileged.
             </div>
         </div>
     </body>
@@ -239,7 +239,7 @@ def send_kra_cycle_initiation_email(to_email: str, employee_name: str, cycle_nam
     <body>
         <div class="container">
             <div class="header">
-                <h1>CybeHRM Performance Management</h1>
+                <h1>SynthalystHRM Performance Management</h1>
                 <p>6-Month Goal & KRA Setting Cycle</p>
             </div>
             <div class="content">
@@ -251,12 +251,12 @@ def send_kra_cycle_initiation_email(to_email: str, employee_name: str, cycle_nam
                     <tr><th>Target Completion Date</th><td style="color: #dc2626;">{target_date}</td></tr>
                     <tr><th>Status</th><td><span style="background: #dcfce7; color: #166534; padding: 4px 8px; border-radius: 9999px; font-size: 12px;">Initiated & Open</span></td></tr>
                 </table>
-                <p>Please log in to the <strong>CybeHRM Portal</strong>, navigate to your Dashboard or Performance section, and define your Key Result Areas ensuring your total weightage allocates exactly to 100%.</p>
+                <p>Please log in to the <strong>SynthalystHRM Portal</strong>, navigate to your Dashboard or Performance section, and define your Key Result Areas ensuring your total weightage allocates exactly to 100%.</p>
                 <div style="margin-top: 24px; border-top: 1px solid #f1f5f9; padding-top: 16px;">
-                    <strong>Human Resources Division</strong><br>CybeHRM Solutions
+                    <strong>Human Resources Division</strong><br>SynthalystHRM Solutions
                 </div>
             </div>
-            <div class="footer">Confidential performance notification generated via CybeHRM portal.</div>
+            <div class="footer">Confidential performance notification generated via SynthalystHRM portal.</div>
         </div>
     </body>
     </html>
@@ -304,12 +304,12 @@ def send_manager_kra_reminder_email(to_email: str, employee_name: str, manager_n
                     <tr><th>Review Cycle</th><td>{cycle_name}</td></tr>
                     <tr><th>Target Completion Date</th><td style="color: #dc2626;">{target_date}</td></tr>
                 </table>
-                <p>Please log in to your CybeHRM Dashboard, submit your Key Result Areas with clear metrics and target dates, and ensure they are ready for formal alignment with your manager.</p>
+                <p>Please log in to your SynthalystHRM Dashboard, submit your Key Result Areas with clear metrics and target dates, and ensure they are ready for formal alignment with your manager.</p>
                 <div style="margin-top: 24px; border-top: 1px solid #f1f5f9; padding-top: 16px;">
-                    <strong>{manager_name}</strong><br>CybeHRM Performance Management
+                    <strong>{manager_name}</strong><br>SynthalystHRM Performance Management
                 </div>
             </div>
-            <div class="footer">Confidential performance notification generated via CybeHRM portal.</div>
+            <div class="footer">Confidential performance notification generated via SynthalystHRM portal.</div>
         </div>
     </body>
     </html>
@@ -319,7 +319,7 @@ def send_manager_kra_reminder_email(to_email: str, employee_name: str, manager_n
 
 def send_self_review_submitted_email(to_email: str, recipient_name: str, employee_name: str, review_cycle: str, is_to_manager: bool) -> bool:
     """
-    3. Self Rating against KRA completed - Mail goes from CybeHRM to both employee and manager.
+    3. Self Rating against KRA completed - Mail goes from SynthalystHRM to both employee and manager.
     """
     if is_to_manager:
         subject = f"🔔 Manager Alert: {employee_name} Completed Self-Rating ({review_cycle})"
@@ -343,11 +343,11 @@ def send_self_review_submitted_email(to_email: str, recipient_name: str, employe
     </style></head>
     <body>
         <div class="container">
-            <div class="header"><h2 style="margin:0;">CybeHRM Appraisal Update</h2></div>
+            <div class="header"><h2 style="margin:0;">SynthalystHRM Appraisal Update</h2></div>
             <div class="content">
                 <p style="font-size: 16px; font-weight: 600;">{salutation}</p>
                 <p>{body}</p>
-                <div style="margin-top: 24px; border-top: 1px solid #f1f5f9; padding-top: 16px;"><strong>CybeHRM Automated Notification System</strong></div>
+                <div style="margin-top: 24px; border-top: 1px solid #f1f5f9; padding-top: 16px;"><strong>SynthalystHRM Automated Notification System</strong></div>
             </div>
             <div class="footer">Confidential system generated email.</div>
         </div>
@@ -379,7 +379,7 @@ def send_manager_review_completed_email(to_email: str, employee_name: str, manag
                 <p style="font-size: 16px; font-weight: 600;">Dear {employee_name},</p>
                 <p>We are pleased to inform you that your reporting manager, <strong>{manager_name}</strong>, has completed the managerial evaluation and scoring for your <strong>{review_cycle}</strong> performance appraisal.</p>
                 <p>Your appraisal is now undergoing HR review and final bell-curve calibration before final scores and ratings are published across the organization.</p>
-                <div style="margin-top: 24px; border-top: 1px solid #f1f5f9; padding-top: 16px;"><strong>CybeHRM Performance Management</strong></div>
+                <div style="margin-top: 24px; border-top: 1px solid #f1f5f9; padding-top: 16px;"><strong>SynthalystHRM Performance Management</strong></div>
             </div>
             <div class="footer">Confidential system generated email.</div>
         </div>
@@ -416,8 +416,8 @@ def send_final_ratings_published_email(to_email: str, employee_name: str, review
                     <span style="font-size: 13px; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px;">Your Calibrated Rating Tier</span><br>
                     <div class="badge">{normalized_category} Performer</div>
                 </div>
-                <p>Log into your CybeHRM portal to view your comprehensive feedback and rating summary.</p>
-                <div style="margin-top: 24px; border-top: 1px solid #f1f5f9; padding-top: 16px;"><strong>Human Resources Operations</strong><br>CybeHRM Solutions</div>
+                <p>Log into your SynthalystHRM portal to view your comprehensive feedback and rating summary.</p>
+                <div style="margin-top: 24px; border-top: 1px solid #f1f5f9; padding-top: 16px;"><strong>Human Resources Operations</strong><br>SynthalystHRM Solutions</div>
             </div>
             <div class="footer">Confidential appraisal record.</div>
         </div>

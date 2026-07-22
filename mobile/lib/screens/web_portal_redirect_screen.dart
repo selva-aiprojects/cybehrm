@@ -44,7 +44,7 @@ class WebPortalRedirectScreen extends StatelessWidget {
               ),
               const SizedBox(height: 16),
               Text(
-                'For security and complexity reasons, "$featureName" configuration is managed exclusively via the CybeHRM Web Portal.',
+                'For security and complexity reasons, "$featureName" configuration is managed exclusively via the SynthalystHRM Web Portal.',
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.grey.shade700, fontSize: 15, height: 1.5),
               ),

@@ -86,10 +86,10 @@ export default function LandingPage({ onLoginClick }: LandingPageProps) {
             {/* The image can fallback to text if missing */}
             <img 
               src="/logo.png" 
-              alt="CybeHRM — Intelligent Human Capital Management" 
+              alt="SynthalystHRM — Intelligent Human Capital Management" 
               onError={(e) => { 
                 e.currentTarget.style.display = 'none'; 
-                e.currentTarget.parentElement!.innerHTML = '<span style="color:var(--primary);font-weight:bold;font-size:20px;letter-spacing:-0.5px;">CybeHRM</span>'; 
+                e.currentTarget.parentElement!.innerHTML = '<span style="color:var(--primary);font-weight:bold;font-size:20px;letter-spacing:-0.5px;">SynthalystHRM</span>'; 
               }} 
             />
           </div>
@@ -113,7 +113,7 @@ export default function LandingPage({ onLoginClick }: LandingPageProps) {
           <div>
             <div className="eyebrow">A Cybelinx Product · Built for Indian SMEs</div>
             <h1 className="display">Run HR like one connected <span className="grad">system of record.</span></h1>
-            <p className="lead">CybeHRM runs attendance, payroll, statutory tax, benefits, hiring, and exits in a single platform — so nothing gets approved twice and nothing slips through unrecorded.</p>
+            <p className="lead">SynthalystHRM runs attendance, payroll, statutory tax, benefits, hiring, and exits in a single platform — so nothing gets approved twice and nothing slips through unrecorded.</p>
             <div className="hero-ctas">
               <button onClick={onLoginClick} className="btn-primary">Request a walkthrough →</button>
               <a href="#workspaces" className="btn-ghost">See the four workspaces</a>
@@ -244,7 +244,7 @@ export default function LandingPage({ onLoginClick }: LandingPageProps) {
           <div className="section-head reveal">
             <div className="eyebrow">Where the approvals actually happen</div>
             <h2>A requisition becomes a hire. A resignation becomes a settlement.</h2>
-            <p>Two of the longer workflows in CybeHRM, end to end — every step owned by a named role.</p>
+            <p>Two of the longer workflows in SynthalystHRM, end to end — every step owned by a named role.</p>
           </div>
 
           <div className="flow-title reveal">Hiring requisition</div>
@@ -329,16 +329,16 @@ export default function LandingPage({ onLoginClick }: LandingPageProps) {
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <img 
             src="/logo.png" 
-            alt="CybeHRM" 
-            style={{ height: "22px" }} 
+            alt="SynthalystHRM" 
+            className="footer-logo" 
             onError={(e) => { 
               e.currentTarget.style.display = 'none'; 
-              e.currentTarget.parentElement!.innerHTML = '<span style="color:var(--primary);font-weight:bold;font-size:14px;letter-spacing:-0.5px;">CybeHRM</span>'; 
+              e.currentTarget.parentElement!.innerHTML = '<span style="color:var(--primary);font-weight:bold;font-size:14px;letter-spacing:-0.5px;">SynthalystHRM</span>'; 
             }} 
           />
         </div>
         <div className="fmeta" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-          <span>© 2026 CYBEHRM · MULTI-TENANT HRMS · SUPABASE · RENDER</span>
+          <span>© 2026 SynthalystHRM · MULTI-TENANT HRMS · SUPABASE · RENDER</span>
           <span style={{ paddingLeft: '16px', borderLeft: '1px solid var(--border-color)', color: 'var(--primary)' }}>A Cybelinx Product</span>
         </div>
       </footer>

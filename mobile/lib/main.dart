@@ -199,7 +199,7 @@ class HRMSEngineApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'CybeHRM',
+      title: 'SynthalystHRM',
       theme: CogniTheme.lightTheme,
       routerConfig: _router,
       debugShowCheckedModeBanner: false,

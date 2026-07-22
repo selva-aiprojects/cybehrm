@@ -1,10 +1,10 @@
-# CybeHRM — System Architecture & Design
+# SynthalystHRM — System Architecture & Design
 
 ---
 
 ## 1. PRODUCT OVERVIEW
 
-**CybeHRM** is a multi-tenant SaaS HRMS platform purpose-built for Indian SMEs. It covers the full employee lifecycle — from requisition to exit — as a single connected system of record.
+**SynthalystHRM** is a multi-tenant SaaS HRMS platform purpose-built for Indian SMEs. It covers the full employee lifecycle — from requisition to exit — as a single connected system of record.
 
 ### Four Workspaces
 

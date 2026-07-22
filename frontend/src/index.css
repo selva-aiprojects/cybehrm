@@ -1,5 +1,5 @@
 /* index.css — HRMS-Engine 2.0 Premium Design System */
-/* CybeHRM Intelligence Theme */
+/* SynthalystHRM Intelligence Theme */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 /* =====================================================================
@@ -7,21 +7,21 @@
    ===================================================================== */
 :root {
   /* Brand Colors */
-  --primary: #0E243D; /* CybeHRM Navy */
-  --primary-deep: #07182C;
-  --primary-rgb: 14, 36, 61;
-  --accent: #2A9D8F; /* CybeHRM Teal */
-  --accent-rgb: 42, 157, 143;
-  --accent-hover: #23877B;
-  --wp-menu-bg: linear-gradient(135deg, #ffffff 0%, #F4F6F8 100%);
-  --wp-menu-border: #d7dde4;
+  --primary: #1e3a8a; /* SynthalystHRM Tech Blue */
+  --primary-deep: #172554;
+  --primary-rgb: 30, 58, 138;
+  --accent: #8b5cf6; /* SynthalystHRM Purple */
+  --accent-rgb: 139, 92, 246;
+  --accent-hover: #7c3aed;
+  --wp-menu-bg: linear-gradient(135deg, #ffffff 0%, #f5f3ff 100%);
+  --wp-menu-border: #ddd6fe;
 
   /* Gradient System */
-  --grad-brand: linear-gradient(135deg, #0E243D 0%, #2A9D8F 100%);
-  --grad-brand-rev: linear-gradient(135deg, #2A9D8F 0%, #0E243D 100%);
-  --grad-glow: radial-gradient(circle at 15% 20%, rgba(42, 157, 143, 0.18) 0%, transparent 50%),
-               radial-gradient(circle at 85% 80%, rgba(255, 193, 7, 0.14) 0%, transparent 50%),
-               radial-gradient(circle at 50% 50%, rgba(14, 36, 61, 0.08) 0%, transparent 70%);
+  --grad-brand: linear-gradient(135deg, #1e3a8a 0%, #8b5cf6 100%);
+  --grad-brand-rev: linear-gradient(135deg, #8b5cf6 0%, #1e3a8a 100%);
+  --grad-glow: radial-gradient(circle at 15% 20%, rgba(139, 92, 246, 0.18) 0%, transparent 50%),
+               radial-gradient(circle at 85% 80%, rgba(30, 58, 138, 0.14) 0%, transparent 50%),
+               radial-gradient(circle at 50% 50%, rgba(30, 58, 138, 0.08) 0%, transparent 70%);
 
   /* Status */
   --success: #10B981;
@@ -1350,7 +1350,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: center;
   padding: 60px;
-  background: linear-gradient(135deg, var(--primary-deep) 0%, #051424 100%);
+  background: var(--bg-app);
 }
 
 .auth-mesh-bg {
@@ -1360,11 +1360,11 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   bottom: 0;
   background-image: 
-    radial-gradient(circle at 15% 50%, rgba(var(--accent-rgb),0.4), transparent 50%),
-    radial-gradient(circle at 85% 30%, rgba(255,193,7,0.35), transparent 50%),
-    radial-gradient(circle at 50% 80%, rgba(0,150,168,0.3), transparent 50%);
+    radial-gradient(circle at 15% 50%, rgba(var(--accent-rgb),0.08), transparent 50%),
+    radial-gradient(circle at 85% 30%, rgba(255,193,7,0.1), transparent 50%),
+    radial-gradient(circle at 50% 80%, rgba(var(--primary-rgb),0.05), transparent 50%);
   background-size: cover;
-  opacity: 0.8;
+  opacity: 1;
   z-index: 1;
 }
 
@@ -1375,13 +1375,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .badge-glass {
-  background: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(var(--primary-rgb),0.05);
+  border: 1px solid rgba(var(--primary-rgb),0.1);
   padding: 8px 16px;
   border-radius: 30px;
-  color: #fff;
+  color: var(--primary);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   backdrop-filter: blur(10px);
 }
 

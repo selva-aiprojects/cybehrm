@@ -1,9 +1,9 @@
-# CybeHRM – Product Requirement Document (PRD)
+# SynthalystHRM – Product Requirement Document (PRD)
 
 ## 1. Overview
 
 ### Product Name
-CybeHRM
+SynthalystHRM
 
 ### Vision
 Build a comprehensive, AI-powered HRMS platform for small and medium businesses (SMEs) with simplified HR operations, advanced automated payroll with Indian statutory tax compliance, performance reviews, offboarding, employee benefits/perks, insurance plans, car lease structures, and AI-assisted analytics.

@@ -1,4 +1,4 @@
--- CybeHRM Database Seed Script
+-- SynthalystHRM Database Seed Script
 -- Generates default organization, core departments, default designations,
 -- sample users (super admin, HR manager, employees), initial leave balances,
 -- and salary structures for testing multi-tenancy and modules.

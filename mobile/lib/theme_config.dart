@@ -3,17 +3,17 @@ import 'package:google_fonts/google_fonts.dart';
 
 class CogniTheme {
   // ─── Brand Palette ──────────────────────────────────────────────────────────
-  static const Color brand900   = Color(0xFF0E243D); // CybeHRM navy
-  static const Color brand800   = Color(0xFF17334F); // Deep navy tint
-  static const Color brand700   = Color(0xFF0E243D); // Primary brand
-  static const Color brand600   = Color(0xFF123150); // Primary hover
-  static const Color brand400   = Color(0xFF2A9D8F); // CybeHRM teal
-  static const Color brand100   = Color(0xFFE8F3F1); // Teal tint
-  static const Color brand50    = Color(0xFFF4F6F8); // Brand off-white
+  static const Color brand900   = Color(0xFF172554); // Deep tech blue
+  static const Color brand800   = Color(0xFF1E3A8A); // Blue 900
+  static const Color brand700   = Color(0xFF1D4ED8); // Primary brand blue
+  static const Color brand600   = Color(0xFF2563EB); // Primary hover
+  static const Color brand400   = Color(0xFF8B5CF6); // SynthalystHRM purple
+  static const Color brand100   = Color(0xFFEDE9FE); // Purple tint
+  static const Color brand50    = Color(0xFFF5F3FF); // Brand off-white
 
-  static const Color teal700    = Color(0xFF23877B);
-  static const Color teal500    = Color(0xFF2A9D8F);
-  static const Color teal100    = Color(0xFFE6F4F1);
+  static const Color teal700    = Color(0xFF7C3AED);
+  static const Color teal500    = Color(0xFF8B5CF6);
+  static const Color teal100    = Color(0xFFEDE9FE);
 
   static const Color violet700  = Color(0xFF7C3AED);
   static const Color violet500  = Color(0xFF8B5CF6);
@@ -54,7 +54,7 @@ class CogniTheme {
 
   // ─── Gradient Shortcuts ────────────────────────────────────────────────────
   static const LinearGradient heroGradient = LinearGradient(
-    colors: [brand700, Color(0xFF2A9D8F), Color(0xFFFFC107)],
+    colors: [brand700, Color(0xFF8B5CF6), Color(0xFF3B82F6)],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
