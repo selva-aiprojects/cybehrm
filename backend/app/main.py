@@ -27,7 +27,10 @@ app = FastAPI(
 # Configure CORS Middleware
 # Allows seamless API queries from our Vite React frontend
 origins = [
-    "*", # Allow all origins for seamless deployment
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "http://localhost:8000",
+    "https://cybehrm.vercel.app",
 ]
 
 app.add_middleware(
